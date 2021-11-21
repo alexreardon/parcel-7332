@@ -1,11 +1,19 @@
 {
   "name": "parcel-7332",
   "version": "0.1.0",
-  "main": "index.js",
   "author": "Alex Reardon <alexreardon@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "clean": "rimraf dist .parcel-cache",
+    "build": "parcel build src/index.html"
+  },
   "devDependencies": {
     "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "@atlaskit/tokens": "^0.4.0",
+    "bootstrap": "^5.1.3"
   }
 }
